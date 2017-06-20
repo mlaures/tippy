@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented basic Tippy:
 
-<img src="http://i.imgur.com/a/pWetE.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="https://imgur.com/edbdc010-5111-4601-ad63-64210fe11734" title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
