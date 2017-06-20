@@ -33,7 +33,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+-Describe any challenges encountered while building the app.
+
 I changed a function name after already linking it. So of course I recieved an NSException error.
 Luckily I recognized my old function name - I just had to relink the action to the function.
 
