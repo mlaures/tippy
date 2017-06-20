@@ -1,10 +1,10 @@
-# Project 1 - Tiply
+# Project 1 - Tippy
 
-Tiply is a tip calculator application for iOS.
+Tippy is a tip calculator application for iOS.
 
 Submitted by: Mei-Ling Laures
 
-Time spent: **X** hours spent in total
+Time spent: 1 hours spent in total
 
 ## User Stories
 
@@ -25,15 +25,17 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented basic Tippy:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://imgur.com/a/pWetE' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+I changed a function name after already linking it. So of course I recieved an NSException error.
+Luckily I recognized my old function name - I just had to relink the action to the function.
 
 ## Credits
 
@@ -43,7 +45,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 ## License
 
-Copyright [yyyy] [name of copyright owner]
+Copyright 2017 Mei-Ling Laures
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
