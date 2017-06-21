@@ -27,11 +27,12 @@ class ViewController: UIViewController {
 
     @IBAction func calculate_tip(_ sender: Any) {
         
-        let percentages = [0.15, 0.18, 0.2];
+        let defaults = UserDefaults.standard;
+        
+        let percentages = [defaults.double(forKey: "seg_op1"), defaults.double(forKey: "seg_op2"), defaults.double(forKey: "seg_op3")];
         let amount = Double(bill_entry.text!) ?? 0;
         
         let calc = amount * percentages[tip_control.selectedSegmentIndex];
-        
         
         tip_label.text = String(format: "$%.2f", calc);
         total_label.text = String(format: "$%.2f", (calc+amount));
@@ -40,5 +41,17 @@ class ViewController: UIViewController {
     @IBAction func on_tap(_ sender: Any) {
         view.endEditing(true);
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.calculate_tip(self);
+        
+        let defaults = UserDefaults.standard;
+        tip_control.setTitle(String(defaults.integer(forKey: "seg_op1")) + "%", forSegmentAt: 0);
+        tip_control.setTitle(String(defaults.integer(forKey: "seg_op2")) + "%", forSegmentAt: 1);
+        tip_control.setTitle(String(defaults.integer(forKey: "seg_op3")) + "%", forSegmentAt: 2);
+
+    }
+
 }
 
